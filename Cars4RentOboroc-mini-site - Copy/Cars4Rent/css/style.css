@@ -1,0 +1,751 @@
+
+/* RESETARE GENERALA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #202327;
+    background: white;
+}
+
+.container {
+    width: 88%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* MENIU */
+
+header {
+    padding: 20px 0;
+    background: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #202327;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #f36b35;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #555;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #f36b35;
+}
+
+.nav-button {
+    padding: 12px 18px;
+    color: white;
+    background: #202327;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+/* BUTOANE */
+
+.button {
+    display: inline-block;
+    padding: 15px 22px;
+    color: white;
+    background: #f36b35;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #d95725;
+}
+
+.dark-button {
+    padding: 13px 20px;
+    color: white;
+    background: #202327;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* TEXTE MICI */
+
+.small-title {
+    margin-bottom: 17px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.orange {
+    color: #f36b35;
+}
+
+/* HERO - PAGINA PRINCIPALA */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    background:
+    linear-gradient(90deg, rgba(0,0,0,0.85), rgba(0,0,0,0.15)),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    font-size: 65px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #f36b35;
+}
+
+.hero-text {
+    max-width: 440px;
+    margin-bottom: 30px;
+    color: #ddd;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* FORMULAR REZERVARE */
+
+.booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+.booking h2 {
+    font-size: 20px;
+}
+
+.booking form {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+}
+
+.booking label {
+    font-size: 11px;
+    color: #777;
+}
+
+.booking input,
+.booking select {
+    display: block;
+    width: 135px;
+    margin-top: 7px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* SECTIUNI */
+
+.section {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2,
+.about-text h2,
+.contact-info h2 {
+    font-size: 36px;
+}
+
+.text-link {
+    color: #f36b35;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CARDURI MASINI */
+
+.cars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.car-card {
+    border: 1px solid #eee;
+    background: white;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.car-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-type {
+    color: #999;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.car-info h3 {
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.car-info a {
+    color: #f36b35;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.price {
+    margin: 15px 0;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.price span {
+    color: #888;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.car-description {
+    min-height: 40px;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* AVANTAJE */
+
+.advantages {
+    padding: 75px 0;
+    color: white;
+    background: #202327;
+}
+
+.advantages h2 {
+    margin-bottom: 35px;
+    font-size: 35px;
+}
+
+.advantages h2 span {
+    color: #f36b35;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.advantages-grid div {
+    padding: 25px;
+    background: #2b3036;
+}
+
+.advantages-grid h3 {
+    margin-bottom: 15px;
+    color: #f36b35;
+    font-size: 25px;
+}
+
+.advantages-grid h4 {
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.advantages-grid p {
+    color: #bbb;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* PAGINI INTERNE */
+
+.page-hero {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+.page-hero h1 {
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.page-hero h1 span {
+    color: #f36b35;
+}
+
+.page-hero p:last-child {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.cars-hero {
+    background-image:
+    linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0,.2)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85");
+}
+
+.about-hero {
+    background-image:
+    linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0,.2)),
+    url("https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1800&q=85");
+}
+
+.contact-hero {
+    background-image:
+    linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0,.2)),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1800&q=85");
+}
+
+/* DESPRE NOI */
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.about-text h2 span {
+    color: #f36b35;
+}
+
+.about-text p:not(.small-title) {
+    margin: 18px 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* CONTACT - DESIGN NOU */
+
+.contact-banner {
+    padding: 95px 0;
+    color: white;
+    background:
+    linear-gradient(90deg, rgba(0,0,0,0.85), rgba(0,0,0,0.25)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85");
+
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-banner h1 {
+    max-width: 650px;
+    margin-bottom: 18px;
+    font-size: 52px;
+}
+
+.contact-banner h1 span {
+    color: #f36b35;
+}
+
+.contact-banner p:last-child {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.contact-new {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.contact-left h2 {
+    font-size: 36px;
+}
+
+.contact-left h2 span {
+    color: #f36b35;
+}
+
+.contact-intro {
+    max-width: 420px;
+    margin: 20px 0 30px;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 12px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    border-color: #f36b35;
+    transform: translateY(-3px);
+}
+
+.contact-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    color: #f36b35;
+    background: #fff0e9;
+    border-radius: 50%;
+}
+
+.contact-card h3 {
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+.contact-card p,
+.contact-card span {
+    margin-bottom: 7px;
+    color: #777;
+    font-size: 11px;
+}
+
+.contact-card a {
+    display: block;
+    color: #f36b35;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.contact-photo {
+    margin-top: 25px;
+}
+
+.contact-photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.contact-form-new {
+    padding: 35px;
+    background: #f7f7f7;
+    border-radius: 5px;
+}
+
+.contact-form-new h2 {
+    margin-bottom: 12px;
+    font-size: 27px;
+}
+
+.form-description {
+    margin-bottom: 25px;
+    color: #777;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.contact-form-new form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form-new label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contact-form-new input,
+.contact-form-new select,
+.contact-form-new textarea {
+    width: 100%;
+    padding: 14px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.contact-form-new input:focus,
+.contact-form-new select:focus,
+.contact-form-new textarea:focus {
+    outline: none;
+    border-color: #f36b35;
+}
+
+.send-button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-note {
+    color: #999;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* INTREBARI FRECVENTE */
+
+.faq-section {
+    padding: 75px 0;
+    background: #f7f7f7;
+}
+
+.faq-section h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.faq-card {
+    padding: 25px;
+    background: white;
+    border: 1px solid #eee;
+}
+
+.faq-card h3 {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.faq-card p {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* ADAPTARE PENTRU TELEFON */
+
+@media (max-width: 850px) {
+
+    .contact-new {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contact-banner {
+        padding: 70px 0;
+    }
+
+    .contact-banner h1 {
+        font-size: 36px;
+    }
+
+    .contact-cards,
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-new {
+        padding: 22px;
+    }
+
+    .contact-new {
+        gap: 35px;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px 0;
+    color: white;
+    background: #17191c;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo {
+    color: white;
+}
+
+footer p,
+footer a:last-child {
+    color: #aaa;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .booking {
+        display: block;
+    }
+
+    .booking form {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .cars {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .booking form {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .booking input,
+    .booking select {
+        width: 100%;
+    }
+
+    .cars,
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        display: block;
+    }
+
+    .section-heading .text-link {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .about-image img {
+        height: 260px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
